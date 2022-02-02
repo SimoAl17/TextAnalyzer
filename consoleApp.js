@@ -159,9 +159,19 @@ function repeatedWordsForPage(text) {
     }
     return countedWords;
 }
+
 document.getElementById("stats").innerText = stats;
+
+//let par = document.getElementById("stats");
+//let node = document.createTextNode("Numero caratteri: " + text.length + "\nNumero parole: " + (countWords(replaceWithSpaces(text))) + "\n\nRipetizione Parole:\n" + repeatedWordsForPage(replaceWithSpaces(text)) + "\nRipetizione Caratteri:\n" + repeatedChars(replaceWithSpaces(text)));
+//par.appendChild(node);
+
 function refresh(){
     text = document.getElementById("testo").textContent;
     stats = "Numero caratteri: " + text.length + "\nNumero parole: " + (countWords(replaceWithSpaces(text))) + "\n\nRipetizione Parole:\n" + repeatedWordsForPage(replaceWithSpaces(text)) + "\nRipetizione Caratteri:\n" + repeatedChars(replaceWithSpaces(text));
     document.getElementById("stats").innerText = stats;
+    //par = document.getElementById("stats");
+    //par.innerHTML = " ";
+    //let node = document.createTextNode("Numero caratteri: " + text.length + "\nNumero parole: " + (countWords(replaceWithSpaces(text))) + "\n\nRipetizione Parole:\n" + repeatedWordsForPage(replaceWithSpaces(text)) + "\nRipetizione Caratteri:\n" + repeatedChars(replaceWithSpaces(text)));
+    //par.appendChild(node);
 }
